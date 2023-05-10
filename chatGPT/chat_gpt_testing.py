@@ -5,7 +5,7 @@ from codegen import *
 import random
 import string
 
-openai.api_key = "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"
+openai.api_key = "None"
 model_engine = "gpt-3.5-turbo"
 
 def make_fun(parameters):
