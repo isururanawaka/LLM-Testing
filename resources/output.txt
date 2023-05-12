@@ -1,0 +1,595 @@
+{
+    "results": [
+        {
+            "name": "get_all_tenants",
+            "parameters": [
+                "token",
+                "offset",
+                "limit",
+                "status",
+                "requester_email"
+            ],
+            "count": 5
+        },
+        {
+            "name": "update_tenant_status",
+            "parameters": [
+                "token",
+                "client_id",
+                "status"
+            ],
+            "count": 3
+        }
+    ],
+    "total_parameter_count": 8
+}
+{
+    "results": [
+        {
+            "name": "get_secret",
+            "parameters": [
+                "token",
+                "owner_type",
+                "resource_type",
+                "source",
+                "name"
+            ],
+            "count": 5
+        },
+        {
+            "name": "get_JWKS",
+            "parameters": [
+                "token"
+            ],
+            "count": 1
+        },
+        {
+            "name": "add_ssh_credential",
+            "parameters": [
+                "token",
+                "client_id",
+                "owner_id",
+                "description"
+            ],
+            "count": 4
+        },
+        {
+            "name": "add_password_credential",
+            "parameters": [
+                "token",
+                "client_id",
+                "owner_id",
+                "description",
+                "password"
+            ],
+            "count": 5
+        },
+        {
+            "name": "get_ssh_credential",
+            "parameters": [
+                "token",
+                "client_id",
+                "ssh_credential_token"
+            ],
+            "count": 3
+        },
+        {
+            "name": "get_password_credential",
+            "parameters": [
+                "token",
+                "client_id",
+                "password_credential_token"
+            ],
+            "count": 3
+        },
+        {
+            "name": "set_KV_credential",
+            "parameters": [
+                "token",
+                "user_token",
+                "client_id",
+                "key",
+                "value"
+            ],
+            "count": 5
+        },
+        {
+            "name": "update_KV_credential",
+            "parameters": [
+                "token",
+                "user_token",
+                "client_id",
+                "key",
+                "value"
+            ],
+            "count": 5
+        },
+        {
+            "name": "delete_KV_credential",
+            "parameters": [
+                "token",
+                "user_token",
+                "client_id",
+                "key"
+            ],
+            "count": 4
+        },
+        {
+            "name": "get_KV_credential",
+            "parameters": [
+                "token",
+                "user_token",
+                "client_id",
+                "key"
+            ],
+            "count": 4
+        }
+    ],
+    "total_parameter_count": 39
+}
+{
+    "results": [
+        {
+            "name": "create_group",
+            "parameters": [
+                "token",
+                "name",
+                "description",
+                "owner_id"
+            ],
+            "count": 4
+        },
+        {
+            "name": "delete_group",
+            "parameters": [
+                "token",
+                "id"
+            ],
+            "count": 2
+        },
+        {
+            "name": "find_group",
+            "parameters": [
+                "token",
+                "group_name",
+                "group_id"
+            ],
+            "count": 3
+        },
+        {
+            "name": "get_all_groups",
+            "parameters": [
+                "token"
+            ],
+            "count": 1
+        },
+        {
+            "name": "add_user_to_group",
+            "parameters": [
+                "token",
+                "username",
+                "group_id",
+                "membership_type"
+            ],
+            "count": 4
+        },
+        {
+            "name": "remove_user_from_group",
+            "parameters": [
+                "token",
+                "username",
+                "group_id"
+            ],
+            "count": 3
+        },
+        {
+            "name": "add_child_group",
+            "parameters": [
+                "token",
+                "parent_group_id",
+                "child_group_id"
+            ],
+            "count": 3
+        },
+        {
+            "name": "remove_child_group",
+            "parameters": [
+                "token",
+                "parent_group_id",
+                "child_group_id"
+            ],
+            "count": 3
+        }
+    ],
+    "total_parameter_count": 23
+}
+{
+    "results": [
+        {
+            "name": "create_entity_type",
+            "parameters": ["token", "client_id", "id", "name", "description"],
+            "count": 5
+        },
+        {
+            "name": "create_permission_type",
+            "parameters": ["token", "client_id", "id", "name", "description"],
+            "count": 5
+        },
+        {
+            "name": "create_entity",
+            "parameters": ["token", "client_id", "id", "name", "description", "owner_id", "type", "parent_id"],
+            "count": 8
+        },
+        {
+            "name": "share_entity_with_users",
+            "parameters": ["token", "client_id", "entity_id", "permission_type", "user_id"],
+            "count": 5
+        },
+        {
+            "name": "share_entity_with_groups",
+            "parameters": ["token", "client_id", "entity_id", "permission_type", "group_id"],
+            "count": 5
+        },
+        {
+            "name": "user_has_access",
+            "parameters": ["token", "client_id", "entity_id", "permission_type", "user_id"],
+            "count": 5
+        }
+    ],
+    "total_parameter_count": 28
+}
+{
+    "results": [
+        {
+            "name": "authenticate",
+            "parameters": [
+                "token",
+                "username",
+                "password"
+            ],
+            "count": 3
+        },
+        {
+            "name": "is_authenticated",
+            "parameters": [
+                "token",
+                "user_access_token",
+                "username"
+            ],
+            "count": 3
+        },
+        {
+            "name": "get_service_account_access_token",
+            "parameters": [
+                "token"
+            ],
+            "count": 1
+        },
+        {
+            "name": "authorize",
+            "parameters": [
+                "client_id",
+                "redirect_uri",
+                "response_type",
+                "scope",
+                "state"
+            ],
+            "count": 5
+        },
+        {
+            "name": "token",
+            "parameters": [
+                "token",
+                "redirect_uri",
+                "code",
+                "username",
+                "password",
+                "refresh_token",
+                "grant_type"
+            ],
+            "count": 7
+        },
+        {
+            "name": "get_credentials",
+            "parameters": [
+                "token",
+                "client_id"
+            ],
+            "count": 2
+        },
+        {
+            "name": "get_oidc_configuration",
+            "parameters": [
+                "token",
+                "client_id"
+            ],
+            "count": 2
+        },
+        {
+            "name": "end_user_session",
+            "parameters": [
+                "token",
+                "refresh_token"
+            ],
+            "count": 2
+        },
+        {
+            "name": "get_agent_token",
+            "parameters": [
+                "token",
+                "client_id",
+                "grant_type",
+                "refresh_token"
+            ],
+            "count": 4
+        },
+        {
+            "name": "end_agent_session",
+            "parameters": [
+                "token",
+                "refresh_token"
+            ],
+            "count": 2
+        }
+    ],
+    "total_parameter_count": 31
+}
+{
+    "results": [
+        {
+            "name": "create_admin_tenant",
+            "parameters": [
+                "client_name",
+                "requester_email",
+                "admin_frist_name",
+                "admin_last_name",
+                "admin_email",
+                "admin_username",
+                "admin_password",
+                "contacts",
+                "redirect_uris",
+                "client_uri",
+                "scope",
+                "domain",
+                "logo_uri",
+                "comment"
+            ],
+            "count": 14
+        },
+        {
+            "name": "create_tenant",
+            "parameters": [
+                "client_token",
+                "client_name",
+                "requester_email",
+                "admin_frist_name",
+                "admin_last_name",
+                "admin_email",
+                "admin_username",
+                "admin_password",
+                "contacts",
+                "redirect_uris",
+                "client_uri",
+                "scope",
+                "domain",
+                "logo_uri",
+                "comment"
+            ],
+            "count": 15
+        },
+        {
+            "name": "get_tenant",
+            "parameters": [
+                "client_token",
+                "client_id"
+            ],
+            "count": 2
+        },
+        {
+            "name": "update_tenant",
+            "parameters": [
+                "client_token",
+                "client_id",
+                "client_name",
+                "requester_email",
+                "admin_frist_name",
+                "admin_last_name",
+                "admin_email",
+                "admin_username",
+                "admin_password",
+                "contacts",
+                "redirect_uris",
+                "client_uri",
+                "scope",
+                "domain",
+                "logo_uri",
+                "comment"
+            ],
+            "count": 16
+        },
+        {
+            "name": "delete_tenant",
+            "parameters": [
+                "token",
+                "client_id"
+            ],
+            "count": 2
+        },
+        {
+            "name": "add_tenant_roles",
+            "parameters": [
+                "token",
+                "roles",
+                "is_client_level"
+            ],
+            "count": 3
+        },
+        {
+            "name": "add_protocol_mapper",
+            "parameters": [
+                "token",
+                "name",
+                "attribute_name",
+                "claim_name",
+                "claim_type",
+                "mapper_type",
+                "add_to_id_token",
+                "add_to_access_token",
+                "add_to_user_info",
+                "multi_valued",
+                "aggregate_attribute_values"
+            ],
+            "count": 11
+        },
+        {
+            "name": "get_child_tenants",
+            "parameters": [
+                "token",
+                "offset",
+                "limit",
+                "status"
+            ],
+            "count": 4
+        },
+        {
+            "name": "get_all_tenants",
+            "parameters": [
+                "token",
+                "email"
+            ],
+            "count": 2
+        }
+    ],
+    "total_parameter_count": 69
+}
+{
+    "results": [
+        {
+            "name": "load_certificate",
+            "parameters": [],
+            "count": 0
+        },
+        {
+            "name": "__download_certificate",
+            "parameters": [],
+            "count": 0
+        },
+        {
+            "name": "__is_certificate_valid",
+            "parameters": [],
+            "count": 0
+        }
+    ],
+    "total_parameter_count": 0
+}
+{
+  "results": [
+    {
+      "name": "authenticate",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "getUser",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "isAuthenticated",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "getUserManagementServiceAccountAccessToken",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "getToken",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "getAuthorizeEndpoint",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "getOIDCConfiguration",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "getTokenByPasswordGrantType",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "getTokenByRefreshTokenGrantType",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "getJWKS",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    },
+    {
+      "name": "endSession",
+      "parameters": [
+        "request",
+        "responseObserver"
+      ],
+      "count": 2
+    }
+  ],
+  "total_parameter_count": 24
+}
+Traceback (most recent call last):
+  File "content_reader.py", line 68, in <module>
+    acc = process('urls.txt')
+  File "content_reader.py", line 35, in process
+    response = get_chat_gpt_result("list  set of method parameters in  the code " + content)
+  File "content_reader.py", line 47, in get_chat_gpt_result
+    response = openai.ChatCompletion.create(
+  File "/home/exouser/anaconda3/envs/chatgpt/lib/python3.8/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/exouser/anaconda3/envs/chatgpt/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/exouser/anaconda3/envs/chatgpt/lib/python3.8/site-packages/openai/api_requestor.py", line 230, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/home/exouser/anaconda3/envs/chatgpt/lib/python3.8/site-packages/openai/api_requestor.py", line 624, in _interpret_response
+    self._interpret_response_line(
+  File "/home/exouser/anaconda3/envs/chatgpt/lib/python3.8/site-packages/openai/api_requestor.py", line 687, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.InvalidRequestError: This model's maximum context length is 4097 tokens. However, your messages resulted in 6095 tokens. Please reduce the length of the messages.
